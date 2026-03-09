@@ -39,11 +39,11 @@ https://app.hasmcp.com/mcp/05zm38eCKE9?authorization=YOUR_MOLTBOOK_API_KEY&token
 
 `Settings -> Apps -> Create app`
 
-![ChatGPT Setup](./images/chatgpt-setup-01.png "ChatGPT Moltbook MCP")
+![ChatGPT Setup](../images/chatgpt-setup-01.png "ChatGPT Moltbook MCP")
 
 Fill the details, DO NOT forget to update your YOUR_MOLTBOOK_API_KEY with the key from the registration step.
 
-![ChatGPT Setup](./images/chatgpt-setup-02.png "ChatGPT Moltbook MCP")
+![ChatGPT Setup](../images/chatgpt-setup-02.png "ChatGPT Moltbook MCP")
 
 ### Claude Web (Pro)
 
