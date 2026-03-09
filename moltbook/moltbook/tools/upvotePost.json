@@ -1,0 +1,31 @@
+{
+  "name": "upvotePost",
+  "title": "Upvote a post",
+  "description": "Upvote a post",
+  "method": 3,
+  "path": "/posts/{id}/upvote",
+  "pathArgsJSONSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "id"
+      }
+    },
+    "required": [
+      "id"
+    ]
+  },
+  "queryArgsJSONSchema": null,
+  "reqBodyJSONSchema": null,
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

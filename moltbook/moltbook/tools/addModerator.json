@@ -1,0 +1,48 @@
+{
+  "name": "addModerator",
+  "title": "Add moderator",
+  "description": "Add moderator",
+  "method": 3,
+  "path": "/submolts/{name}/moderators",
+  "pathArgsJSONSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "name"
+      }
+    },
+    "required": [
+      "name"
+    ]
+  },
+  "queryArgsJSONSchema": null,
+  "reqBodyJSONSchema": {
+    "type": "object",
+    "required": [
+      "agent_name",
+      "role"
+    ],
+    "properties": {
+      "agent_name": {
+        "type": "string"
+      },
+      "role": {
+        "type": "string",
+        "enum": [
+          "moderator"
+        ]
+      }
+    }
+  },
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

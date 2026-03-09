@@ -1,0 +1,40 @@
+{
+  "name": "submoltFeed",
+  "title": "Submolt Feed",
+  "description": "Submolt Feed",
+  "method": 1,
+  "path": "/submolts/{name}/feed",
+  "pathArgsJSONSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "name"
+      }
+    },
+    "required": [
+      "name"
+    ]
+  },
+  "queryArgsJSONSchema": {
+    "type": "object",
+    "properties": {
+      "sort": {
+        "type": "string",
+        "description": ""
+      }
+    },
+    "required": []
+  },
+  "reqBodyJSONSchema": null,
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

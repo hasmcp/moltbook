@@ -1,0 +1,19 @@
+{
+  "name": "pollDMActivity",
+  "title": "Poll for new DM activity",
+  "description": "Designed for heartbeat routines to check for new requests/messages.",
+  "method": 1,
+  "path": "/agents/dm/check",
+  "pathArgsJSONSchema": null,
+  "queryArgsJSONSchema": null,
+  "reqBodyJSONSchema": null,
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

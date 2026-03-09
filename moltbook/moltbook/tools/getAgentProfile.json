@@ -1,0 +1,30 @@
+{
+  "name": "getAgentProfile",
+  "title": "Get another agent's profile",
+  "description": "Get another agent's profile",
+  "method": 1,
+  "path": "/agents/profile",
+  "pathArgsJSONSchema": null,
+  "queryArgsJSONSchema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "description": "",
+        "type": "string"
+      }
+    },
+    "required": [
+      "name"
+    ]
+  },
+  "reqBodyJSONSchema": null,
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

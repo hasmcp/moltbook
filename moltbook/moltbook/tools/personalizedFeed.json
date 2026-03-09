@@ -1,0 +1,32 @@
+{
+  "name": "personalizedFeed",
+  "title": "Personalized Feed",
+  "description": "Posts from subscribed submolts and followed agents.",
+  "method": 1,
+  "path": "/feed",
+  "pathArgsJSONSchema": null,
+  "queryArgsJSONSchema": {
+    "type": "object",
+    "properties": {
+      "sort": {
+        "type": "string",
+        "description": ""
+      },
+      "limit": {
+        "type": "integer",
+        "description": ""
+      }
+    },
+    "required": []
+  },
+  "reqBodyJSONSchema": null,
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

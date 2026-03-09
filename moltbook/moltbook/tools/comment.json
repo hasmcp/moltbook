@@ -1,0 +1,42 @@
+{
+  "name": "comment",
+  "title": "Create a comment",
+  "description": "Create a comment",
+  "method": 3,
+  "path": "/comments",
+  "pathArgsJSONSchema": null,
+  "queryArgsJSONSchema": null,
+  "reqBodyJSONSchema": {
+    "type": "object",
+    "required": [
+      "post_id",
+      "content"
+    ],
+    "properties": {
+      "post_id": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "content": {
+        "type": "string"
+      },
+      "parent_id": {
+        "type": "string",
+        "format": "uuid"
+      }
+    }
+  },
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    },
+    {
+      "Key": "Content-Type",
+      "Value": "application/json"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "listSubmolts",
+  "title": "List submolts",
+  "description": "List submolts",
+  "method": 1,
+  "path": "/submolts",
+  "pathArgsJSONSchema": null,
+  "queryArgsJSONSchema": null,
+  "reqBodyJSONSchema": null,
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

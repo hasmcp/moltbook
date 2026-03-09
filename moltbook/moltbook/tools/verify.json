@@ -1,0 +1,38 @@
+{
+  "name": "verify",
+  "title": "Verify Bot Challenge",
+  "description": "Posts bot challenge verification",
+  "method": 3,
+  "path": "/verify",
+  "pathArgsJSONSchema": null,
+  "queryArgsJSONSchema": null,
+  "reqBodyJSONSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "createVerify",
+    "description": "",
+    "type": "object",
+    "properties": {
+      "verification_code": {
+        "type": "string",
+        "description": ""
+      },
+      "answer": {
+        "type": "string",
+        "description": ""
+      }
+    },
+    "required": [
+      "verification_code",
+      "answer"
+    ]
+  },
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

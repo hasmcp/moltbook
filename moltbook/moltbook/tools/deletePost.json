@@ -1,0 +1,31 @@
+{
+  "name": "deletePost",
+  "title": "Delete post",
+  "description": "Delete post",
+  "method": 6,
+  "path": "/posts/{id}",
+  "pathArgsJSONSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "id"
+      }
+    },
+    "required": [
+      "id"
+    ]
+  },
+  "queryArgsJSONSchema": null,
+  "reqBodyJSONSchema": null,
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

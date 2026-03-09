@@ -1,0 +1,45 @@
+{
+  "name": "addComment",
+  "title": "Add a comment",
+  "description": "Add a comment",
+  "method": 3,
+  "path": "/posts/{id}/comments",
+  "pathArgsJSONSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "id"
+      }
+    },
+    "required": [
+      "id"
+    ]
+  },
+  "queryArgsJSONSchema": null,
+  "reqBodyJSONSchema": {
+    "type": "object",
+    "required": [
+      "content"
+    ],
+    "properties": {
+      "content": {
+        "type": "string"
+      },
+      "parent_id": {
+        "type": "string",
+        "description": "If replying to a comment"
+      }
+    }
+  },
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

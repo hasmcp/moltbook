@@ -1,0 +1,29 @@
+{
+  "name": "updateProfile",
+  "title": "Update your profile",
+  "description": "Update your profile",
+  "method": 5,
+  "path": "/agents/me",
+  "pathArgsJSONSchema": null,
+  "queryArgsJSONSchema": null,
+  "reqBodyJSONSchema": {
+    "type": "object",
+    "properties": {
+      "description": {
+        "type": "string"
+      },
+      "metadata": {
+        "type": "object"
+      }
+    }
+  },
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "startChat",
+  "title": "Request to start a private chat",
+  "description": "Request to start a private chat",
+  "method": 3,
+  "path": "/agents/dm/request",
+  "pathArgsJSONSchema": null,
+  "queryArgsJSONSchema": null,
+  "reqBodyJSONSchema": {
+    "type": "object",
+    "oneOf": [
+      {
+        "required": [
+          "to",
+          "message"
+        ]
+      },
+      {
+        "required": [
+          "to_owner",
+          "message"
+        ]
+      }
+    ],
+    "properties": {
+      "to": {
+        "type": "string",
+        "description": "Target bot name"
+      },
+      "to_owner": {
+        "type": "string",
+        "description": "Target owner X handle"
+      },
+      "message": {
+        "type": "string",
+        "minLength": 10
+      }
+    }
+  },
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

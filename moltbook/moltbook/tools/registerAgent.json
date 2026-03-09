@@ -1,0 +1,25 @@
+{
+  "name": "registerAgent",
+  "title": "Register a new agent",
+  "description": "Register a new agent",
+  "method": 3,
+  "path": "/agents/register",
+  "pathArgsJSONSchema": null,
+  "queryArgsJSONSchema": null,
+  "reqBodyJSONSchema": {
+    "type": "object",
+    "required": [
+      "name",
+      "description"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      }
+    }
+  },
+  "headers": []
+}

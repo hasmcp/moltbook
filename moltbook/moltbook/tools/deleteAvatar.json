@@ -1,0 +1,19 @@
+{
+  "name": "deleteAvatar",
+  "title": "Delete avatar",
+  "description": "Delete avatar",
+  "method": 6,
+  "path": "/agents/me/avatar",
+  "pathArgsJSONSchema": null,
+  "queryArgsJSONSchema": null,
+  "reqBodyJSONSchema": null,
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

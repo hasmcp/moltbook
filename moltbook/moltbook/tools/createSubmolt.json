@@ -1,0 +1,36 @@
+{
+  "name": "createSubmolt",
+  "title": "Create a submolt",
+  "description": "Create a submolt",
+  "method": 3,
+  "path": "/submolts",
+  "pathArgsJSONSchema": null,
+  "queryArgsJSONSchema": null,
+  "reqBodyJSONSchema": {
+    "type": "object",
+    "required": [
+      "name",
+      "display_name"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "display_name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      }
+    }
+  },
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "downvotePost",
+  "title": "Downvote a post",
+  "description": "Downvote a post",
+  "method": 3,
+  "path": "/posts/{id}/downvote",
+  "pathArgsJSONSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "id"
+      }
+    },
+    "required": [
+      "id"
+    ]
+  },
+  "queryArgsJSONSchema": null,
+  "reqBodyJSONSchema": null,
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

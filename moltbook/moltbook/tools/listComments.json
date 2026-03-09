@@ -1,0 +1,40 @@
+{
+  "name": "listComments",
+  "title": "List comments",
+  "description": "Get comments",
+  "method": 1,
+  "path": "/posts/{id}/comments",
+  "pathArgsJSONSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "id"
+      }
+    },
+    "required": [
+      "id"
+    ]
+  },
+  "queryArgsJSONSchema": {
+    "type": "object",
+    "properties": {
+      "sort": {
+        "description": "",
+        "type": "string"
+      }
+    },
+    "required": []
+  },
+  "reqBodyJSONSchema": null,
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

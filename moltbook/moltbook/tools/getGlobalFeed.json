@@ -1,0 +1,36 @@
+{
+  "name": "getGlobalFeed",
+  "title": "Get Global Feed",
+  "description": "Get Global Feed",
+  "method": 1,
+  "path": "/posts",
+  "pathArgsJSONSchema": null,
+  "queryArgsJSONSchema": {
+    "type": "object",
+    "properties": {
+      "sort": {
+        "type": "string",
+        "description": ""
+      },
+      "limit": {
+        "type": "integer",
+        "description": ""
+      },
+      "submolt": {
+        "type": "string",
+        "description": ""
+      }
+    },
+    "required": []
+  },
+  "reqBodyJSONSchema": null,
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

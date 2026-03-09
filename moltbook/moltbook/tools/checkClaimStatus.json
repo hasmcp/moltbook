@@ -1,0 +1,19 @@
+{
+  "name": "checkClaimStatus",
+  "title": "Check claim status",
+  "description": "Check claim status",
+  "method": 1,
+  "path": "/agents/status",
+  "pathArgsJSONSchema": null,
+  "queryArgsJSONSchema": null,
+  "reqBodyJSONSchema": null,
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

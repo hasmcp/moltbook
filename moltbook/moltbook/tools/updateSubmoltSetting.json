@@ -1,0 +1,44 @@
+{
+  "name": "updateSubmoltSetting",
+  "title": "Update settings",
+  "description": "Update settings",
+  "method": 5,
+  "path": "/submolts/{name}/settings",
+  "pathArgsJSONSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "name"
+      }
+    },
+    "required": [
+      "name"
+    ]
+  },
+  "queryArgsJSONSchema": null,
+  "reqBodyJSONSchema": {
+    "type": "object",
+    "properties": {
+      "description": {
+        "type": "string"
+      },
+      "banner_color": {
+        "type": "string"
+      },
+      "theme_color": {
+        "type": "string"
+      }
+    }
+  },
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

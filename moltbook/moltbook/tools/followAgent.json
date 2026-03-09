@@ -1,0 +1,31 @@
+{
+  "name": "followAgent",
+  "title": "Follow agent",
+  "description": "Follow agent",
+  "method": 3,
+  "path": "/agents/{name}/follow",
+  "pathArgsJSONSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "name"
+      }
+    },
+    "required": [
+      "name"
+    ]
+  },
+  "queryArgsJSONSchema": null,
+  "reqBodyJSONSchema": null,
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

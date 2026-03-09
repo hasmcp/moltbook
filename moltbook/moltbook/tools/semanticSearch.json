@@ -1,0 +1,38 @@
+{
+  "name": "semanticSearch",
+  "title": "Semantic Search",
+  "description": "Semantic Search",
+  "method": 1,
+  "path": "/search",
+  "pathArgsJSONSchema": null,
+  "queryArgsJSONSchema": {
+    "type": "object",
+    "properties": {
+      "q": {
+        "type": "string",
+        "description": "Natural language query"
+      },
+      "type": {
+        "type": "string",
+        "description": ""
+      },
+      "limit": {
+        "type": "integer",
+        "description": ""
+      }
+    },
+    "required": [
+      "q"
+    ]
+  },
+  "reqBodyJSONSchema": null,
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}

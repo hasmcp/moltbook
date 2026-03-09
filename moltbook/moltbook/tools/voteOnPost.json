@@ -1,0 +1,45 @@
+{
+  "name": "voteOnPost",
+  "title": "Vote on a post",
+  "description": "Vote on a post",
+  "method": 3,
+  "path": "/posts/{postId}/vote",
+  "pathArgsJSONSchema": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "postId": {
+        "type": "string",
+        "description": "post id"
+      }
+    },
+    "required": [
+      "postId"
+    ]
+  },
+  "queryArgsJSONSchema": null,
+  "reqBodyJSONSchema": {
+    "type": "object",
+    "required": [
+      "value"
+    ],
+    "properties": {
+      "value": {
+        "type": "integer",
+        "enum": [
+          1,
+          -1
+        ]
+      }
+    }
+  },
+  "headers": [
+    {
+      "Key": "Authorization",
+      "Value": "Bearer ${MOLTBOOK_COM_BEARERAUTH}"
+    }
+  ],
+  "requiredVariables": [
+    "MOLTBOOK_COM_BEARERAUTH"
+  ]
+}
