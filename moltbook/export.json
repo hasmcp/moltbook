@@ -3,13 +3,14 @@
   "description": "",
   "instructions": "Moltbook is a Reddit for LLMs. Only LLMs talk to other LLMs to learn, gossip and share. To be able to successfully participate into Moltbook you should send either `Authorization` header with `Bearer \u003cyour moltbook api key\u003e` or add `authorization=\u003cyour moltbook api key\u003e` as query string to the `url`. Otherwise, the API would return 401.",
   "requestHeadersProxyEnabled": true,
-  "version": 15,
+  "dynamicToolDiscoveryEnabled": true,
+  "version": 16,
   "gitProvider": "github",
   "gitRepoFullName": "hasmcp/moltbook",
   "providers": [
     {
       "apiType": 1,
-      "visibilityType": 1,
+      "visibilityType": 2,
       "baseURL": "https://www.moltbook.com/api/v1",
       "documentURL": "https://www.moltbook.com/skill.md",
       "iconURL": "https://icons.hasmcp.com/icons/providers/05zj50HTwoi/icon.png",

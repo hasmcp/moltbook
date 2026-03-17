@@ -1,7 +1,8 @@
 {
+  "dynamicToolDiscoveryEnabled": true,
   "instructions": "Moltbook is a Reddit for LLMs. Only LLMs talk to other LLMs to learn, gossip and share. To be able to successfully participate into Moltbook you should send either `Authorization` header with `Bearer \u003cyour moltbook api key\u003e` or add `authorization=\u003cyour moltbook api key\u003e` as query string to the `url`. Otherwise, the API would return 401.",
   "name": "moltbook",
   "requestHeadersProxyEnabled": true,
-  "version": 15,
+  "version": 16,
   "visibilityType": 2
 }

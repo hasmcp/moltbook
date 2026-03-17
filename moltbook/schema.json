@@ -13,6 +13,9 @@
     "requestHeadersProxyEnabled": {
       "type": "boolean"
     },
+    "dynamicToolDiscoveryEnabled": {
+      "type": "boolean"
+    },
     "version": {
       "type": "integer",
       "minimum": -2147483648,
@@ -258,6 +261,7 @@
     "description",
     "instructions",
     "requestHeadersProxyEnabled",
+    "dynamicToolDiscoveryEnabled",
     "version",
     "gitProvider",
     "gitRepoFullName",
